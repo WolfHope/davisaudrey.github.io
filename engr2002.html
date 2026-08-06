@@ -1,34 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>ENGR 2002: Professional Development</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGR 2002: Professional Development</title>
+
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --text: #222;
+            --card: white;
+            --accent: #4f46e5;
+        }
+
+        .dark-mode {
+            --bg: #121212;
+            --text: #f0f0f0;
+            --card: #1f1f1f;
+            --accent: #818cf8;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .card {
+            background-color: var(--card);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: var(--accent);
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-  
-  <p><a href="index.html">← Back to Home <h1>ENGR 2002: Professional Development</h1>
 
-<h2>Table of Contents</h2>
-  <ul>
-    <li>final">Final Reflection</a></li>
-  <li>#communication</li>
-  <li><a href="#teamwork">Teamwork</a></lili>
-  <li>#takeaways></li>
-</ul>
+    <p>
+        index.html← Back to Home</a>
+    </p>
 
-<h2 id="final">Final Reflection</h2>
-  <p>Summary of what I learned throughout the course.</p>
+    <p>
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    </p>
 
-<h2 id="communication">Communication</h2>
-  <p>Your communication reflection.</p>
+    <h1>ENGR 2002: Professional Development</h1>
 
-<h2 id="teamwork">Teamwork</h2>
-  <p>Reflection on collaboration and team performance.</p>
+    <div class="card">
+        <h2>Table of Contents</h2>
 
-  <h2 id="ethics">Ethical Decision Making</h2>
-  <p>Your ethics reflection.</p>
+        <ul>
+            <li>#final</li>
+            <li>#teamwork</li>
+            <li>#ethicsEthical Decision Making</a></li>
+            <li>#takeawaysKey Takeaways</a></li>
+            <li>references">References</a></li>
+        </ul>
+    </div>
 
-<h2 id="takeaways">Key Takeaways</h2>
-  <p>Major lessons gained from the course.</p>
+    <div class="card">
+        <h2 id="final">Final Reflection</h2>
+
+        <p>
+            Provide a summary of your overall learning and growth during the course.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2 id="teamwork">Teamwork Reflection</h2>
+
+        <h3>How the Team Functioned</h3>
+        <p>
+            Describe your team structure, communication methods,
+            and how work was completed.
+        </p>
+
+        <h3>What Worked Well</h3>
+        <p>
+            Discuss successful teamwork practices and provide examples.
+        </p>
+
+        <h3>Improvements We Made</h3>
+        <p>
+            Explain changes your team made throughout the semester.
+        </p>
+
+        <h3>Future Improvements</h3>
+        <p>
+            Connect lessons learned to readings and course materials.
+        </p>
+
+        <h3>Evidence</h3>
+        <p>
+            Insert screenshots of CATME feedback, communication,
+            or project work here.
+        </p>
+
+        <!-- Example Screenshot
+        teamwork-screenshot.png
+        -->
+    </div>
+
+    <div class="card">
+        <h2 id="ethics">Ethical Decision Making</h2>
+
+        <h3>Views Before the Course</h3>
+        <p>
+            Explain your understanding of engineering responsibilities before ENGR 2002.
+        </p>
+
+        <h3>What Changed</h3>
+        <p>
+            Describe how readings and activities influenced your perspective.
+        </p>
+
+        <h3>Most Impactful Readings and Activities</h3>
+        <p>
+            Discuss specific course readings and assignments.
+        </p>
+
+        <h3>Evidence</h3>
+        <p>
+            Include screenshots from Project 2, reading responses,
+            or class assignments.
+        </p>
+
+        <h3>Application to Future Engineering Practice</h3>
+        <p>
+            Explain how you will apply these lessons in future classes,
+            internships, and your engineering career.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2 id="takeaways">Key Takeaways</h2>
+
+        <ul>
+            <li>Professional communication is essential.</li>
+            <li>Successful teams require planning and accountability.</li>
+            <li>Engineering decisions have ethical consequences.</li>
+            <li>Engineers must consider social, economic, environmental, and cultural impacts.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 id="references">References</h2>
+
+        <p>
+            Add IEEE-formatted references here.
+        </p>
+
+        <ol>
+            <li>[1] Course Reading #1</li>
+            <li>[2] Course Reading #2</li>
+        </ol>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
 
 </body>
 </html>
