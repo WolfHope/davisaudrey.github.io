@@ -6,71 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audrey Davis Learning Portfolio</title>
 
-    <style>
-        :root {
-            --bg: #f4f7fb;
-            --text: #222;
-            --card: white;
-            --accent: #4f46e5;
-        }
-
-        .dark-mode {
-            --bg: #121212;
-            --text: #f0f0f0;
-            --card: #1f1f1f;
-            --accent: #818cf8;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            transition: 0.3s;
-        }
-
-        .card {
-            background-color: var(--card);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        button {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: var(--accent);
-            color: white;
-        }
-
-        h1 {
-            text-align: center;
-        }
-    </style>
+    ">
 </head>
 
 <body>
 
     <h1>Audrey Davis Learning Portfolio</h1>
 
-    <p style="text-align:center;">
+    <p class="center">
         Learning Portfolio and Reflections
     </p>
 
-    <p style="text-align:center;">
+    <p class="center">
         <button onclick="toggleTheme()">Toggle Dark Mode</button>
     </p>
 
@@ -89,7 +36,7 @@
 
         <ul>
             <li>
-                <a href="engr2002.html">
+                engr2002.html">
                     ENGR 2002: Professional Development
                 </a>
             </li>
@@ -100,25 +47,4 @@
         <h2>Future Courses</h2>
 
         <p>
-            Additional course reflections will be added here as I continue my studies.
-        </p>
-    </div>
-
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle("dark-mode");
-
-            if (document.body.classList.contains("dark-mode")) {
-                localStorage.setItem("theme", "dark");
-            } else {
-                localStorage.setItem("theme", "light");
-            }
-        }
-
-        if (localStorage.getItem("theme") === "dark") {
-            document.body.classList.add("dark-mode");
-        }
-    </script>
-
-</body>
-</html>
+            Additional course reflections will 
