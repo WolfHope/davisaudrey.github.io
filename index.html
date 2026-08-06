@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audrey Davis Learning Portfolio</title>
 
-    style.css
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -47,4 +47,26 @@
         <h2>Future Courses</h2>
 
         <p>
-            Additional course reflections will 
+            Additional course reflections will be added here as I continue my studies.
+        </p>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+
+</body>
+
+</html>
