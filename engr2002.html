@@ -6,79 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENGR 2002: Professional Development</title>
 
-    <style>
-        :root {
-            --bg: #f4f7fb;
-            --text: #222;
-            --card: white;
-            --accent: #4f46e5;
-        }
-
-        .dark-mode {
-            --bg: #121212;
-            --text: #f0f0f0;
-            --card: #1f1f1f;
-            --accent: #818cf8;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            transition: 0.3s;
-        }
-
-        .card {
-            background-color: var(--card);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        button {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: var(--accent);
-            color: white;
-        }
-    </style>
+    style.css
 </head>
 
 <body>
-
-    <p>
-        index.html← Back to Home</a>
+    
+    <p class="back-link">
+      index.html← Back to Home</a>
     </p>
-
-    <p>
+    
+    <p class="center">
         <button onclick="toggleTheme()">Toggle Dark Mode</button>
     </p>
-
+    
     <h1>ENGR 2002: Professional Development</h1>
 
     <div class="card">
         <h2>Table of Contents</h2>
 
-        <ul>
-            <li>#final</li>
-            <li>#teamwork</li>
-            <li>#ethicsEthical Decision Making</a></li>
-            <li>#takeawaysKey Takeaways</a></li>
-            <li>references">References</a></li>
+        <ul class="toc">
+            <li>#finalFinal Reflection</a></li>
+            <li>work">Teamwork Reflection</a></li>
+            <li>#ethics</li>
+            <li>#takeaways</li>
+            <li>#references</li>
         </ul>
     </div>
 
@@ -94,62 +45,69 @@
         <h2 id="teamwork">Teamwork Reflection</h2>
 
         <h3>How the Team Functioned</h3>
+
         <p>
-            Describe your team structure, communication methods,
-            and how work was completed.
+            Describe your team's structure, communication methods,
+            and how responsibilities were distributed.
         </p>
 
         <h3>What Worked Well</h3>
+
         <p>
             Discuss successful teamwork practices and provide examples.
         </p>
 
         <h3>Improvements We Made</h3>
+
         <p>
-            Explain changes your team made throughout the semester.
+            Explain any changes your team made during the semester.
         </p>
 
         <h3>Future Improvements</h3>
+
         <p>
             Connect lessons learned to readings and course materials.
         </p>
 
         <h3>Evidence</h3>
+
         <p>
             Insert screenshots of CATME feedback, communication,
-            or project work here.
+            project work, or team planning here.
         </p>
-
-        <!-- Example Screenshot
-        teamwork-screenshot.png
-        -->
     </div>
 
     <div class="card">
         <h2 id="ethics">Ethical Decision Making</h2>
 
         <h3>Views Before the Course</h3>
+
         <p>
-            Explain your understanding of engineering responsibilities before ENGR 2002.
+            Explain your understanding of engineering responsibilities
+            before taking ENGR 2002.
         </p>
 
         <h3>What Changed</h3>
+
         <p>
-            Describe how readings and activities influenced your perspective.
+            Describe how the readings and activities affected your perspective.
         </p>
 
         <h3>Most Impactful Readings and Activities</h3>
+
         <p>
             Discuss specific course readings and assignments.
         </p>
 
         <h3>Evidence</h3>
+
         <p>
-            Include screenshots from Project 2, reading responses,
-            or class assignments.
+            Include screenshots from Project 2, readings,
+            assignments, or class discussions.
         </p>
 
         <h3>Application to Future Engineering Practice</h3>
+
         <p>
             Explain how you will apply these lessons in future classes,
             internships, and your engineering career.
@@ -170,9 +128,7 @@
     <div class="card">
         <h2 id="references">References</h2>
 
-        <p>
-            Add IEEE-formatted references here.
-        </p>
+        <p>Add IEEE-formatted references here.</p>
 
         <ol>
             <li>[1] Course Reading #1</li>
@@ -197,4 +153,5 @@
     </script>
 
 </body>
+
 </html>
