@@ -39,15 +39,7 @@
     }
 }
 
-h4 {
-    font-size: 1.4rem;
-    color: var(--accent);
-    margin-top:30px;
-}
 
-h5 {
-    font-size: 1.1 rem;
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg);
@@ -65,6 +57,25 @@ h1 {
 
 h2 {
     color: var(--accent);
+}
+
+h3 {
+    color: var(--accent);
+    margin-top:  30px;
+}
+
+h4 {
+    font-size: 1.7rem;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h5 {
+    font-size: 1.1 rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .card {
