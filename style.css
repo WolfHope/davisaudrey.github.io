@@ -38,6 +38,16 @@
         flex-direction: column;
     }
 }
+
+h4 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    margin-top:30px;
+}
+
+h5 {
+    font-size: 1.1 rem;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg);
