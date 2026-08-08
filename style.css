@@ -39,6 +39,11 @@
     }
 }
 
+.figure-caption {
+    text-align: center;
+    font-style: italics;
+    font-size: 0.9rem;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
